@@ -1,0 +1,11 @@
+name: multibranch_with_marker_file
+displayName: Multibranch pipeline with marker file
+type: MULTIBRANCH
+parameters:
+  - name: repoUrl
+    displayName: Repo
+multibranch:
+  branchSource:
+    git:
+      remote: ${repoUrl}
+  markerFile: README
